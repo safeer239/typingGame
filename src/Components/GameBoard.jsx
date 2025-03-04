@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 function GameBoard() {
-    const words = ["react", "javascript", "developer", "frontend", "backend", "node", "express", "database"];
+    const words = ["react", "javascript", "developer", "frontend", "backend", "node", "express", "database","apple", "banana", "cherry", "dog", "elephant", "forest", "guitar", "honey", "island", "jungle",
+  "kangaroo", "lemon", "mountain", "notebook", "ocean", "piano", "quartz", "river", "sunlight", "tree",
+  "umbrella", "volcano", "whale", "xylophone", "yacht", "zebra", "airplane", "butterfly", "cloud", "desert",
+  "engine", "feather", "garden", "horizon", "iceberg", "jacket", "koala", "library", "mirror", "nebula",
+  "octopus", "parrot", "quiet", "rainbow", "sapphire", "tiger", "unicorn", "vintage", "window", "xenon",
+  "yogurt", "zephyr", "anchor", "bridge", "castle", "dolphin", "emerald", "fountain", "galaxy", "harbor",
+  "insect", "jigsaw", "kite", "lantern", "meadow", "night", "orchid", "pumpkin", "quill", "rose", "swan",
+  "thunder", "utopia", "violin", "wolf", "xerox", "yawn", "zenith", "armor", "breeze", "compass", "diamond",
+  "eclipse", "firefly", "grape", "helmet", "ivy", "jungle", "key", "lotus", "maple", "nebula", "opal",
+  "pearl", "quest", "ruby", "sand", "topaz", "uranium", "vortex", "wheat", "xylophone", "yeti", "zodiac"];
 
 const getRandomWord = () => words[Math.floor(Math.random() * words.length)];
   const [isGameOn, setIsGameOn] = useState(false);
